@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #login-container,
+        #register-container,
+        #main-container {
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+                /* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+    </style>
+    <title>MyLeetCode</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/salem">Home</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+      </div>
+
+    <div class="container">
+        <h1>Welcome to MyLeetCode</h1>
+        <div id="register-container">
+            <h2>Register</h2>
+            <form id="register-form" method="post" action="/register">
+                <label for="name">name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="surname">surname:</label>
+                <input type="surname" id="surname" name="surname" required>
+                <label for="barcode">barcode:</label>
+                <input type="barcode" id="barcode" name="barcode" required>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div id = "navigation"> <a href="/login">Login</a></div>
+   
+</div>
+
+
+     
+    
+    <script src="static/js/script.js"></script>
+</body>
+</html>
